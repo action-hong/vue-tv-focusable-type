@@ -1,6 +1,6 @@
 # vue-tv-focusable-type
 
-最近碰到个可能需要在web上实现类似TV的管理聚焦移动的功能，[该库](https://www.npmjs.com/package/vue-tv-focusable)看上去还蛮符合需求的，照着文档写了个大致的类型文件
+给[vue-tv-focusable](https://www.npmjs.com/package/vue-tv-focusable)添加类型
 
 ## 使用
 
