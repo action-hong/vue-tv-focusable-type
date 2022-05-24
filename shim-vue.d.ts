@@ -1,4 +1,3 @@
-import 'vue'
 
 // https://slailcp.github.io/?type=vue-tv-focusable#7.%E6%89%80%E6%9C%89%E5%8F%AF%E9%85%8D%E7%BD%AE%E9%A1%B9
 
@@ -80,3 +79,11 @@ declare module 'vue' {
     $tv: TV
   }
 }
+
+// https://vuejs.org/guide/typescript/options-api.html#augmenting-global-properties
+// In order to take advantage of module augmentation, 
+// you will need to ensure the augmentation is placed in a TypeScript module. 
+// That is to say, the file needs to contain at least one top-level import or export, 
+// even if it is just export {}. If the augmentation is placed outside of a module, 
+// it will overwrite the original types rather than augmenting them!
+export {}
