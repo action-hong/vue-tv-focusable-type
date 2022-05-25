@@ -54,7 +54,6 @@ type TV = {
   init(option: TVOption)
 
   setScrollEl(el: Element | null): void
-  resetScrollEl(): void
 
   // reset
   resetFocusClassName(): void
