@@ -41,7 +41,7 @@ interface TVOption {
   formAutofocus?: boolean
 }
 
-interface TV {
+type TV = {
   // 配置项
   itemAttrname: string
   scrollEl: Element | null
@@ -72,7 +72,7 @@ interface TV {
   requestFocus(el: Element, animate?: Boolean)
   getElementByPath(path: string): Element
   readXPath(el: Element): string
-}
+} & Required<TVOption>
 
 declare module 'vue' {
   interface ComponentCustomProperties {
